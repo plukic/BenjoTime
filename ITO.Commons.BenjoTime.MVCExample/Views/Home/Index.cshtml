@@ -1,0 +1,15 @@
+﻿@inject ITO.Commons.BenjoTime.Core.IDateTimeConverter dtConverter
+@{
+    var utcTest = DateTime.UtcNow;
+    var clientDt = dtConverter.FromUTCToUserDateTime(utcTest);
+    var utcPonovo = dtConverter.FromUserDateTimeToUTC(clientDt);
+    ViewData["Title"] = "Home Page";
+}
+<div class="text-center">
+
+    <h5><b>TEST VRIJEME:</b> @utcTest.ToString()</h5>
+    <h5><b>UTC VRIJEME:</b> @utcPonovo.ToString()</h5>
+    <h5><b>Klijentela VRIJEME:</b> @clientDt.ToString()</h5>
+</div>
+
+

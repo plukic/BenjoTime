@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Authors>Petar Lukić</Authors>
+    <Company>ITO</Company>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>BenjoTime meets all your .NET needs for manipulating with timezones.</Description>
+    <Copyright>Petar Lukić</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/plukic/BenjoTime</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/plukic/BenjoTime</RepositoryUrl>
+    <RepositoryType>https://github.com/plukic/BenjoTime</RepositoryType>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Middlewares\**" />
+    <EmbeddedResource Remove="Middlewares\**" />
+    <None Remove="Middlewares\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor" Version="2.2.0" />
+    <PackageReference Include="TimeZoneConverter" Version="3.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ITO.Commons.BenjoTime.Core\ITO.Commons.BenjoTime.Core.csproj" />
+  </ItemGroup>
+
+</Project>

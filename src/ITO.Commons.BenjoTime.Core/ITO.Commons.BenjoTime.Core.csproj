@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Copyright>Petar Lukić</Copyright>
+    <Authors>Petar Lukić</Authors>
+    <Description>BenjoTime core package that contains the library core functionalities.</Description>
+    <PackageProjectUrl>https://github.com/plukic/BenjoTime</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/plukic/BenjoTime</RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Company>ITO</Company>
+  </PropertyGroup>
+
+</Project>
